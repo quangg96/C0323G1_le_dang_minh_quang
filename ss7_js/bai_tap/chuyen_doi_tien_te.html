@@ -7,30 +7,49 @@
 <body>
 <table>
     <tr>
-        <td>Amount</td>
-        <td>From Currency</td>
-        <td>To Currency</td>
-
+        <th><label for="Amount">Amount</label></th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
     </tr>
     <tr>
-        <th><input type="number"></th>
-        <th><select>
-            <option> "USD"</option>
-            <option> "VND"</option>
+        <td><input type="text" id="Amount"/></td>
+        <td>
+            <select id="From">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
             </select>
-        <th>
-      <select>
-            <option> "VND"</option>
-            <option> "USD"</option>
-        </select>
-        <button type="button" onclick="Convert();">Convert</button>
-        </th>
+        </td>
+        <td>
+            <select id="To">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="Convert()">Convert</button>
+        </td>
 </table>
 <script>
-    function Convert1(){
-
+    function Convert(){
+        let Amount = document.getElementById("Amount").value;
+        let From = document.getElementById("From").value;
+        let To = document.getElementById("To").value;
+        let Result;
+        if(From === "USD" && To ==="VND"){
+            Result = Amount * 23000 + "d";
+        }
+        else if (From === "VND" && To === "USD"){
+            Result = Amount/23000 +"$"
+        }
+        else if (From === "USD && To === VND"){
+            Result = Amount + "$"
+        }
+        else {
+            Result = Amount + "d"
+        }
+        document.getEletmentById("Result").InnerHTML = "Result: " + Result;
     }
-
 </script>
 
 </body>
