@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chi so bmi</title>
+</head>
+<body>
+<div class = "alo1234">
+<h1>chi so BMI</h1>
+<p>Height(in m)</p>
+<input type = "number" id = "height" name = "yourheight">
+<p>Weight(in kg)</p>
+<input type = "number" id = "weight" name = "yourweight">
+<button type = "submit" id = "cal">check</button>
+<div id = "result"></div>
+</div>
+<script>
+    let do_height = document.getElementById("height");
+    let do_weight = document.getElementById("weight");
+    function check() {
+        let height = do_height.value;
+        let weight = do_weight.value;
+        let bmi = weight/(height*height);
+    }
+  if ( "bmi" <18.5){
+      alert("Underweight");
+  }else if ( "bmi" <25.0){
+      alert("Normal");
+  }else if ("bmi"<30.0){
+      alert("Overweight");
+  }else {
+      alert("Obese");
+  }
+</script>
+</body>
+</html>
