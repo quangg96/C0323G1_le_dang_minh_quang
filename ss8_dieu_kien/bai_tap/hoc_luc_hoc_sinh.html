@@ -11,11 +11,14 @@
   let CK = prompt('nhap diem thi cuoi ki');
   let tong = KT*1 + GK*1 + CK*1
   alert('tong diem la =' + tong);
-  if(tong>18){
+  if(tong>=0 && tong<=10){
       alert('loai tb');
-  }else if (tong>24){
+  }else if (tong>=10 && tong<=20){
       alert('loai kha');
-  }else (tong>28)
+  }else
+      alert('loai gioi');
+
+
 </script>
 
 </body>
