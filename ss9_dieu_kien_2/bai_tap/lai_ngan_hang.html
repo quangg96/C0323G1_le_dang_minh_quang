@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<table>
+<tr>
+  <td>Nhap so tien</td>
+  <td><input type="number" id="a"></td>
+</tr>
+<tr>
+    <td>So thang vay</td>
+    <td><input type="number" id="t"></td>
+</tr>
+<tr>
+    <td>Lai suat moi thang</td>
+    <td><input type="number" id="l"></td>
+</tr>
+</table>
+<button type = "button" onclick = tienLai()>Kiemtra</button>
+<p id = "ketQua"></p>
+<body>
+<script>
+    function tienLai() {
+        let a = document.getElementById('a').value;
+        let t = document.getElementById('t').value;
+        let l = document.getElementById('l').value = 0.02;
+        let soTienLai = a*l*t;
+        if (a>0 && t>0 && t<=12 && l>0){
+            document.getElementById('ketQua').innerText = 'so tien lai quy khach phai tra la ' + soTienLai + 'đ';
+        }
+        else if (a>0 && t>12 && l>0){
+            document.getElementById('ketQua').innerText = 'so tien lai quy khach phai tra la ' + ((soTienLai*1)+
+                (soTienLai*10/100)) + 'đ';
+        }
+        else if (a>0 && t>=36 && l>0)   {
+        document.getElementById('ketQua').innerText = 'so tien lai quy khach phai tra la ' + ((soTienLai*1)+
+            (soTienLai*30/100)) + 'đ';
+                                        }
+        else {
+            alert ('vui long nhap lai')
+             }
+                        }
+</script>
+</body>
+</html>
