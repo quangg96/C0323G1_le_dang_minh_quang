@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dien nang tieu thu</title>
+</head>
+<body>
+<script>
+    let b1 = 1678;//1678đ chodien1 kWh
+    let b2 = 1734;
+    let b3 = 2014;
+    let b4 = 2526;
+    let b5 = 2834;
+    let b6 = 2927;
+    let kWh = prompt('nhap so kWh vao day toi se tinh so tien tieu thu dien cho ban')
+    if (kWh >=0 && kWh <=50){
+            alert ('tien dien la :' + (kWh*b1));
+    }
+    else if (kWh >=51 && kWh<=100){
+            alert('tien dien la :' + (kWh*b2));
+    }
+    else if (kWh >=101 && kWh<=200){
+        alert('tien dien la :' + (kWh*b3));
+    }
+    else if (kWh >=201 && kWh<=300){
+        alert('tien dien la :' + (kWh*b4));
+    }
+    else if (kWh >=301 && kWh<=400){
+        alert('tien dien la :' + (kWh*b5));
+    }
+    else {
+        alert('tien dien la :' + (kWh*b6));
+    }
+</script>
+</body>
+</html>

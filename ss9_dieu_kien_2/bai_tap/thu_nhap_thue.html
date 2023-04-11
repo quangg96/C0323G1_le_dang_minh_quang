@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thu nhap thue</title>
+</head>
+<body>
+<script>
+    let TN = prompt('nhap thu nhap thang nay cua ban vao day bang so ')
+    let b1 = TN *5/100;
+    let b2 = TN *10/100;
+    let b3 = TN *15/100;
+    let b4 = TN *20/100;
+    let b5 = TN *25/100;
+    let b6 = TN *30/100;
+    let b7 = TN *35/100;
+    if (TN <=5000){
+        alert ('thue phai nop la :' + b1);          //5000 = 5trieuVND
+    }
+    else if (TN >5000 && TN<10000){
+        alert('thue phai nop la :' + b2);
+    }
+    else if (TN >=10000 && TN<18000){
+        alert('thue phai nop la:' + b3);
+    }
+    else if (TN >=18000 && TN<32000){
+        alert('thue phai nop la:' + b4);
+    }
+    else if (TN >=32000 && TN<52000){
+        alert('thue phai nop la' + b5);
+    }
+    else if (TN >=52000 && TN<80000){
+        alert('thue phai nop la:' + b6);
+    }
+    else {
+        alert('thue phai nop la:' + b7);
+    }
+
+</script>
+</body>
+</html>

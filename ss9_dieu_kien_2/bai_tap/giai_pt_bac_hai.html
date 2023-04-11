@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai pt bac 2</title>
+</head>
+<body>
+<script>
+    alert('giai phuong trinh ax2+bx+c=0 ');
+    let a = prompt('nhap a');
+    let b = prompt('nhap b');
+    let c = prompt('nhap c');
+    let x ;
+    let delta ;
+    delta = b*b - 4*a*c;
+    if (delta>0 && a!=0){
+        alert ('phuong trinh co hai nghiem phan biet voi x thu nhat la ' + (-b-Math.sqrt(delta))/(2*a));
+        alert ('nghiem thu hai voi x la ' + (-b+Math.sqrt(delta))/(2*a));
+    }
+    else if (delta==0 && a!=0){
+        alert ('phuong trinh co nghiem kep x thu nhat = x thu hai = ' + (-b)/(2*a));
+    }
+    else {
+        alert ('phuong trinh vo nghiem');
+    }
+</script>
+</body>
+</html>
