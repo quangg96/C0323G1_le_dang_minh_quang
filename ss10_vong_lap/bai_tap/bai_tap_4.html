@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tong 20 so dau tien</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhap n ")
+    let d1 = 1;
+    let d2 = 1;
+    let d3;
+    let sum = d1 + d2;
+    for (let i = 2; i < n; i++) {
+        d3 = d1 + d2;
+        sum += d3;
+        d1 = d2;
+        d2 = d3;
+    }
+    document.write(sum)
+</script>
+</body>
+</html>
