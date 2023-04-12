@@ -6,11 +6,13 @@
 </head>
 <body>
 <script>
-    let nhietDo;
-    do {
-        nhietDo = prompt("nhap nhiet do trong phong cua ban vao day");
-    } while (nhietDo <= 100 || nhietDo >= -20);
-
+    let nhietDo = +prompt('nhap nhiet do trong phong cua ban vao day');
+    while (nhietDo <= 100 || nhietDo >= -20) ;
+    if (nhietDo > 100) {
+        alert('giam nhiet do');
+    } else {
+        alert('tang nhiet do');
+    }
 </script>
 
 </body>
