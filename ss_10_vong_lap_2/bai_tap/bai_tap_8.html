@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type = "button" onclick ="choiNao();">choi</button>
+<script>
+function choiNao()
+{
+let a = prompt('ban muon doan so trong khoang nao , luu y lon hon 0 nhe ');
+let b =  Math.random()*a;
+let c;
+        for (c =0 ; c < 3 ;c++){
+            let d = parseInt(prompt('Chon so di nao'));
+            if (d<b){
+                alert('so ban nhap nho hon');
+            }else if (d>b){
+                alert ('so ban nhap lon hon');
+            }else {
+                alert('chuc mung ban doan dung');
+            }
+}           alert('ban da het so lan choi');
+}
+</script>
+</body>
+</html>
