@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [-3, 9, -200, 40, 20, 526, 10, -3, 60, 32]
+    let index = 0;
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    alert("max " + max + " ở vị trí " + "số " + index);
+</script>
+</body>
+</html>

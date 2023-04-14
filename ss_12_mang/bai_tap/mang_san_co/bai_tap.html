@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[0,2,4,5,6,8];
+    let ketQua = [arr[0]];
+    for(let i = 1;i<arr.length;i++){
+        if(arr[i]%2===0 && arr[i-1]%2===0){
+            ketQua.push("-",arr[i]);
+        }else{
+            ketQua.push(arr[i]);
+        }
+    }document.write(ketQua.join(""));
+</script>
+</body>
+</html>

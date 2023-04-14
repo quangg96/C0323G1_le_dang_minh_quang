@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [6, -9, 10, 90000, 1000000, 8]
+    let y = numbers[0];
+    let z = 0;
+    for (let i = 1;i<numbers.length;i++){
+        if (numbers[i] > y){
+           y = numbers[i];
+            z = i ;
+        }
+    }alert("max " + y + "tai vi tri " + z)
+
+</script>
+
+</body>
+</html>

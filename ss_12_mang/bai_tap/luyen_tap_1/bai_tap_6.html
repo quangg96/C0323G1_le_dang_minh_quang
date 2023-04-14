@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [5,2,-5,-200,644,19,29,20,1,2];
+    let c = parseInt(prompt('nhap vao 1 so V'));
+    let isArray = false;
+    for(let i = 0;i<arr.length;i++)
+    {
+        if (arr[i] === c ) {
+            isArray = true;
+            break;
+        }}
+    alert(isArray? ' V is in the array' : 'V is not in the array');
+        for(let j=0;j<arr.length;j++) {
+            arr[j] = arr[j + 1];
+
+        }   arr[arr.length-1]=0;
+        document.write(arr);
+</script>
+
+</body>
+</html>
