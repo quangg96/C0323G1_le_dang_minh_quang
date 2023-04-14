@@ -10,14 +10,20 @@
     document.write(a);
     let b = a.toString();
     document.write(b);
-    let UPPER = 'LEDANGMINHQUANG';
-    let LOWER = 'ledangminhquang';
+    let UPPER = 'ABCDEFGHIKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghiklmnopqrstuvwxyz';
     let ketQua =[''];
     for (let i =0 ; i<b.length;i++){
-        if(UPPER.indexOf(b[i]) !==(-1){
+        if(UPPER.indexOf(b[i]) !==(-1)){
+           ketQua.push(b[i].toLowerCase());}
+          else if (LOWER.indexOf(b[i])!==(-1)){
+                ketQua.push(b[i].toUpperCase());
+            }else{
+              ketQua.push(b[i]);
+            }
 
-        }
     }
+    document.write(ketQua.join());
 </script>
 
 </body>

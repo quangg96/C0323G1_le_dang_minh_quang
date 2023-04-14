@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<p> nhap tu</p>
+<label><input type="text" ;id="input"></label>
+<button type="button" onclick="sub();">Dịch</button>
+<body>
+<script>
+    function sub() {
+        let eng = ['one', 'two', 'three', 'four'];
+        let viet = ['mot', 'hai', 'ba', 'bon'];
+        let dich = document.getElementById("input").value;
+        for (let i = 0; i < eng.length; i++) {
+            if (dich === eng[i]) {
+                document.write(viet[i]);
+                break;
+            }
+        }
+    }
+</script>
+</body>
+
+</html>
