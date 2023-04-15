@@ -14,6 +14,10 @@
             index = i;
         }
     }
+    for(let j = index;j<arr.length;j++){
+        arr[j]= arr[j+1];}
+    arr[arr.length-1]=0;
+    document.write(arr);
 </script>
 
 </body>
